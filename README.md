@@ -1,4 +1,4 @@
-<h1 align="center">DAO OPTICAL CHARACTER RECOGNITION TOOL</h1>
+<h1 align="center"> OPTICAL CHARACTER RECOGNITION TOOL</h1>
 
 <p align="center">
   <img src="https://cdn.investintech.com/wp-content/uploads/2021/06/OCR-Software.jpg">
