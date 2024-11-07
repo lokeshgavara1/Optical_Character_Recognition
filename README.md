@@ -22,39 +22,18 @@
 
 [Flask Web App](https://dao-ocr-production.up.railway.app/)
 
-[Hashnode Article](https://jayralph.hashnode.dev/dao-optical-character-recognition-tool-flask-web-app-with-tesseract-ocr-integration)
-
-[Medium Article](https://medium.com/@jayralph360/dao-optical-character-recognition-tool-a-flask-web-app-for-accurate-text-extraction-from-image-13cbe06dd8aa)
-
-[Presentation Slide](https://drive.google.com/file/d/158DYPj-OHhpYpOAnOa_LQt0Q8QqYocMt/view?usp=share_link)
-
-[YouTube Demo](https://www.youtube.com/watch?v=mGFyvvT9jpE)
-
-
-## Contributors
-- **[OKAI RAPHAEL](https://github.com/JayRalph360)**
-- **[ABOAGYE SETH](https://github.com/KSetho)**
-- **[DANSO DANIEL](https://github.com/DanielDanso)**
-
 
 ## Table of Contents
 - [About](#about)
-- [Contributors](#contributors)
 - [Repository File Structure](#repository-file-structure)
 - [Problem Statement](#problem-statement)
 - [Proposed Approach](#proposed-approach)
 - [Tools Used :wrench:](#tools-used-wrench)
-- [Project Proposal Demo](#project-proposal-demo)
 - [HTML Web App Demo](#html-web-app-demo)
 - [OCR In Action](#ocr-in-action)
 - [How to run the Application](#how-to-run-the-application)
 - [Tests](#tests)
 - [Deployment](#deployment)
-- [License](#license)
-- [TODO](#todo)
-
-
-
 
 
 ## Repository File Structure
@@ -120,9 +99,6 @@
 ```
 
 
-![Untitled Diagram drawio](https://global-uploads.webflow.com/636bdbebfc681f083e923f81/63861e9b16b4921db3db628e_61e6e589f4ae7a513708b953_A%2520Quick%2520guide%2520into%2520Optical%2520character%2520recognition%2520%2526%2520its%2520software%2520Main%2520image-p-800.jpeg)
-
-
 ## Problem Statement
 >In today's world, we are flooded with a vast amount of data in different forms such as images, PDFs, and scanned documents. Extracting text data from these sources can be a tedious and time-consuming task. It is essential to convert these data sources into a digital format that can be easily processed and analyzed. Manually transcribing text from images is not only time-consuming but also prone to errors, making the process unreliable. This is where Optical Character Recognition (OCR) comes into play. The goal of this project is to create a Flask web app that can integrate Tesseract OCR to extract text from image files accurately.
 
@@ -131,7 +107,7 @@
 
 
 
-## Tools Used :wrench:
+## Tools Used :
 - Python
 - Flask
 - Flask-Scss
@@ -144,17 +120,6 @@
 - Docker
 
 
-
-## Project Proposal Demo
-https://user-images.githubusercontent.com/84851293/227244865-c4105cbd-fc6b-4d7b-a7f7-f6fe8d82e6e5.mp4
-
-
-## Web App Demo
-https://user-images.githubusercontent.com/84851293/233355799-b4a7fbfc-8be8-4d0a-8de6-7000607439ae.mp4
-
-## OCR In Action
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/101701760/186735810-2a1f93d6-9b41-45e5-8a33-57dc09ca3ffd.gif)
-
 ## How to run the Application
 <details> 
   <summary><b>Running on Local Machine</b></summary>
@@ -162,12 +127,12 @@ https://user-images.githubusercontent.com/84851293/233355799-b4a7fbfc-8be8-4d0a-
 **To run the application on your local system do the following:**
 1. Clone the repository:
 ```bash
-git clone https://github.com/JayRalph360/DAO-OCR.git
+https://github.com/lokeshgavara1/Optical_Character_Recognition.git
 ```
 
 2. Change the directory:
 ```
-cd DAO-OCR
+cd Your directory name
 ```
 
 3. Install the requirements:
@@ -190,12 +155,12 @@ python -m flask run
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/JayRalph360/DAO-OCR.git
+https://github.com/lokeshgavara1/Optical_Character_Recognition.git
 ```
 
 2. Change the directory:
 ```
-cd DAO-OCR
+cd Your directory name
 ```
 
 3. Run the docker compose command
@@ -204,105 +169,3 @@ docker compose up -d --build
 ```
 You should be able to view the application by going to http://localhost:5000/
 </details>
-
-
-<details> 
-  <summary><b>Running in a Gitpod Cloud Environment</b></summary>
-
-
-**Click the button below to start a new development environment:**
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JayRalph360/DAO-OCR.git)
-</details>
-
-
-## Tests
-<details> 
-  <summary><b>Test Flask Web App Functions</b></summary>
-
-To test the Flask Web app do the following:
-1. Clone the repository:
-```
-git clone https://github.com/JayRalph360/DAO-OCR.git
-```
-2. Change the working directory and install the requirements and pytest:
-```
-cd src && pip install -r requirements.txt && pip install pytest
-```
-3. Move to the tests folder and run the tests
-```
-cd .. && cd tests && pytest
-```
-</details>
-
-
-## Deployment
-
-<details> 
-  <summary><b>Deploying the Application to Heroku</b></summary>
-
-**Assuming you have git and heroku cli installed just carry out the following steps:**
-
-1. Clone the repository:
-```bash
-git clone https://github.com/JayRalph360/DAO-OCR.git
-```
-
-2. Change the directory:
-```
-cd DAO
-```
-
-3. Login to Heroku
-
-``` 
-heroku login
-heroku container:login
-```
-
-4. Create your application
-```
-heroku create your-app-name
-```
-Replace **your-app-name** with the name of your choosing.
-
-5. Build the image and push to Container Registry:
-
-```
-heroku container:push web
-```
-
-6. Then release the image to your app:
- 
-```
-heroku container:release web
-```
-
-Click the button below to deploy the application.
-
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-</details>
-
-
-<details>
-    <summary><b>Deploy the Application to Railway<b></summary>
-Click the button below to deploy the Application to railway
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/k_WXDI?referralCode=ZYOf2M)
-
-</details>
-
-
-
-## License
-[GNU General Public License v3.0](https://github.com/JayRalph360/DAO-OCR/blob/master/LICENSE)
-
-
-## TODO
-- [x] Research
-- [x] Development
-- [x] Deployment
-- [x] Testing
-- [x] Artcle writing
-- [x] Presentation
